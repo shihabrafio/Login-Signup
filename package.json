@@ -1,4 +1,10 @@
 {
+  "main": "index.js",
+  "scripts": {
+    "start": "npm index.js",
+    "test": "echo \"Error: no test testified\" && exit 1"
+
+  },
   "dependencies": {
     "express": "^4.19.1",
     "hbs": "^4.2.0",
