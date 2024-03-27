@@ -12,15 +12,6 @@ app.set("view engine","hbs")
 app.set("views",templatePath)
 
 
-
-app.get("/",(req,res)=>{
-    res.render("login")
-})
-
-app.get("/signup",(req,res)=>{
-    res.render("signup")
-})
-
 app.post("/login", async(req,res)=>{
     try{
         const check = await collection.findOne({name:req.body.name})
